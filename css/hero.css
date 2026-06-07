@@ -1,0 +1,119 @@
+.hero {
+  align-items: flex-start;
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: space-between;
+  padding-block: 48px;
+}
+
+.hero-content h1 {
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+}
+
+.hero-content h1 span {
+  display: block;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  max-width: 400px;
+}
+
+.auth-button {
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.auth-button a {
+  align-items: center;
+  display: flex;
+  font-size: var(--font-size-md);
+  gap: 12px;
+  justify-content: center;
+}
+
+.auth-button--google {
+  background-color: var(--color-secondary);
+}
+
+.auth-button--google:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.auth-button--google a {
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+}
+
+.auth-button--google .hero-icon {
+  background-color: var(--color-white);
+  border-radius: 50%;
+  max-width: 35px;
+  padding: 8px;
+}
+
+.auth-button--google span {
+  display: inline-block;
+  padding-block: 12px;
+}
+
+.auth-button--secondary {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px var(--color-border-dark);
+  color: var(--color-text-dark);
+  font-size: var(--font-size-md);
+  padding: 8px var(--spacing-md);
+}
+
+.auth-button--secondary:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.auth-button--secondary a {
+  color: var(--color-text-dark);
+}
+
+.microsoft-button .hero-icon {
+  max-width: 25px;
+}
+
+.agreement-text,
+.new-to-linkedin {
+  text-align: center;
+}
+
+.agreement-text {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  margin-top: var(--spacing-sm);
+}
+
+.agreement-text a,
+.new-to-linkedin a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.agreement-text a:hover,
+.new-to-linkedin a:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.new-to-linkedin {
+  margin-top: var(--spacing-lg);
+}
+
+.hero-image {
+  max-width: 600px;
+}
+
+.hero-image img {
+  width: 100%;
+}

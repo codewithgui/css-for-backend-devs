@@ -1,0 +1,94 @@
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-block: var(--spacing-sm);
+}
+
+.linkedin-logo {
+  max-width: 100px;
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 28px;
+  height: 3px;
+  background-color: var(--color-text-dark);
+  border-radius: 999px;
+}
+
+.main-nav,
+.nav-links {
+  display: flex;
+  align-items: stretch;
+}
+
+.main-nav {
+  gap: var(--spacing-lg);
+}
+
+.nav-links {
+  gap: var(--spacing-lg);
+}
+
+.nav-icon {
+  max-width: 25px;
+}
+
+.nav-links li a {
+  align-items: center;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-xs);
+  gap: var(--spacing-xs);
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.nav-links li a:hover {
+  color: var(--color-text-hover);
+}
+
+.nav-links li:last-child {
+  border-inline: 1px solid var(--color-border-light);
+  padding-inline: var(--spacing-sm);
+}
+
+.cta-buttons button {
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  height: 100%;
+  padding: 12px var(--spacing-md);
+}
+
+.sign-in {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  margin-right: var(--spacing-xs);
+}
+
+.sign-in:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+.join-now {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+}
+
+.join-now:hover {
+  background-color: var(--color-primary-hover);
+}

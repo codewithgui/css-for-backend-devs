@@ -1,0 +1,14 @@
+body {
+  color: var(--color-text-dark);
+}
+
+a,
+button {
+  transition: all 0.2s ease;
+}
+
+.wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-inline: var(--spacing-sm);
+}

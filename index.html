@@ -4,125 +4,243 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS For Backend Devs</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="assets/logos/linkedin-logo.png"
-        alt="CSS For Backend Devs Logo"
-      />
+    <div class="wrapper">
+      <header>
+        <a href="#">
+          <img
+            class="linkedin-logo"
+            src="assets/logos/linkedin-logo.png"
+            alt="CSS For Backend Devs Logo"
+          />
+        </a>
 
-      <nav class="main-nav">
-        <ul class="nav-links">
-          <li><a href="#">Top Content</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Learning</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Get the app</a></li>
-        </ul>
+        <button class="hamburger" aria-label="Open menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
 
-        <div class="cta-buttons">
-          <button class="sign-in">Sign in</button>
-          <button class="join-now">Join now</button>
-        </div>
-      </nav>
-    </header>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li>
+              <a href="#">
+                <img
+                  src="assets/icons/rocket.svg"
+                  alt="Rocket Icon"
+                  aria-hidden="true"
+                  class="nav-icon"
+                />
+                <span>Top Content</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/icons/people.svg"
+                  alt="People Icon"
+                  aria-hidden="true"
+                  class="nav-icon"
+                />
+                <span>People</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/icons/learning.svg"
+                  alt="Learning Icon"
+                  aria-hidden="true"
+                  class="nav-icon"
+                />
+                <span>Learning</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/icons/briefcase.svg"
+                  alt="Briefcase Icon"
+                  aria-hidden="true"
+                  class="nav-icon"
+                />
+                <span>Jobs</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/icons/puzzle-piece.svg"
+                  alt="Puzzle Piece Icon"
+                  aria-hidden="true"
+                  class="nav-icon"
+                />
+                <span>Games</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/icons/laptop.svg"
+                  alt="Laptop Icon"
+                  aria-hidden="true"
+                  class="nav-icon"
+                />
+                <span>Get the app</span>
+              </a>
+            </li>
+          </ul>
+          <div class="cta-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="join-now">Join now</button>
+          </div>
+        </nav>
+      </header>
+    </div>
 
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Welcome to your professional community</h1>
+    <div class="wrapper">
+      <main>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Welcome to your <span>professional community</span></h1>
 
-          <div class="auth-buttons">
-            <a class="google" href="#">
-              <img src="assets/logos/google-logo.svg" alt="Google logo" />
-              <span>Continue with Google</span>
-            </a>
-            <a class="microsoft" href="#">
-              <img src="assets/logos/microsoft-logo.svg" alt="Microsoft logo" />
-              <span>Continue with Microsoft</span>
-            </a>
-            <button class="email">Sign in with email</button>
+            <div class="auth-buttons">
+              <button class="auth-button auth-button--google">
+                <a href="#">
+                  <img
+                    class="hero-icon"
+                    src="assets/logos/google-logo.svg"
+                    alt="Google logo"
+                  />
+                  <span>Continue with Google</span>
+                </a>
+              </button>
+
+              <button
+                class="auth-button auth-button--secondary microsoft-button"
+              >
+                <a href="#">
+                  <img
+                    class="hero-icon"
+                    src="assets/logos/microsoft-logo.svg"
+                    alt="Microsoft logo"
+                  />
+                  <span>Continue with Microsoft</span>
+                </a>
+              </button>
+
+              <button class="auth-button auth-button--secondary">
+                Sign in with email
+              </button>
+
+              <p class="agreement-text">
+                By clicking Continue to join or sign in, you agree to LinkedIn's
+                <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a>,
+                and <a href="#">Cookie Policy</a>.
+              </p>
+
+              <p class="new-to-linkedin">
+                New to LinkedIn? <a href="#">Join now</a>
+              </p>
+            </div>
           </div>
 
-          <p class="agreement-text">
-            By clicking Continue to join or sign in, you agree to LinkedIn's
-            <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a>, and
-            <a href="#">Cookie Policy</a>.
-          </p>
-
-          <p class="new-to-linkedin">
-            New to LinkedIn? <a href="#">Join now</a>
-          </p>
-        </div>
-
-        <div class="hero-image">
-          <img
-            src="assets/illustrations/linkedin-hero.png"
-            alt="LinkedIn Hero Image"
-          />
-        </div>
-      </section>
-    </main>
+          <div class="hero-image">
+            <img
+              src="assets/illustrations/linkedin-hero.png"
+              alt="LinkedIn Hero Image"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer>
-      <div class="footer-inner">
-        <div class="footer-column footer-logo-col">
-          <img
-            src="assets/logos/linkedin-logo.png"
-            alt="LinkedIn Logo"
-            class="footer-logo"
-          />
-        </div>
+      <div class="wrapper">
+        <div class="footer-inner">
+          <div class="footer-column footer-logo-col">
+            <a href="#">
+              <img
+                src="assets/logos/linkedin-logo.png"
+                alt="LinkedIn Logo"
+                class="footer-logo"
+              />
+            </a>
+          </div>
 
-        <div class="footer-column">
-          <h4>General</h4>
-          <ul>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Developers</a></li>
-          </ul>
-        </div>
+          <div class="footer-column">
+            <h4>General</h4>
+            <ul>
+              <li>
+                <a href="#">Sign Up</a>
+              </li>
+              <li>
+                <a href="#">Help Center</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Press</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Developers</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="footer-column">
-          <h4>Browse LinkedIn</h4>
-          <ul>
-            <li><a href="#">Learning</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Mobile</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Top Companies</a></li>
-          </ul>
-        </div>
+          <div class="footer-column">
+            <h4>Browse LinkedIn</h4>
+            <ul>
+              <li><a href="#">Learning</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Mobile</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Top Companies</a></li>
+              <li><a href="#">Top Startups</a></li>
+              <li><a href="#">Top Colleges</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-column">
-          <h4>Business Solutions</h4>
-          <ul>
-            <li><a href="#">Talent</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Sales</a></li>
-            <li><a href="#">Learning</a></li>
-          </ul>
-        </div>
+          <div class="footer-column">
+            <h4>Business Solutions</h4>
+            <ul>
+              <li><a href="#">Talent</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Sales</a></li>
+              <li><a href="#">Learning</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-column">
-          <h4>Directories</h4>
-          <ul>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Companies</a></li>
-            <li><a href="#">Featured</a></li>
-            <li><a href="#">Learning</a></li>
-            <li><a href="#">Posts</a></li>
-            <li><a href="#">Articles</a></li>
-          </ul>
+          <div class="footer-column">
+            <h4>Directories</h4>
+            <ul>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Companies</a></li>
+              <li><a href="#">Featured</a></li>
+              <li><a href="#">Learning</a></li>
+              <li><a href="#">Posts</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Schools</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">News Letters</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Advice</a></li>
+              <li><a href="#">People Search</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
